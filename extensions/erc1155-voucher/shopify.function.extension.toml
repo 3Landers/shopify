@@ -1,0 +1,11 @@
+name = "erc1155-voucher"
+type = "product_discounts"
+api_version = "2022-07"
+
+[build]
+command = "cargo wasi build --release"
+path = "target/wasm32-wasi/release/erc1155-voucher.wasm"
+
+[ui.paths]
+create = "/"
+details = "/"
